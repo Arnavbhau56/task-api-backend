@@ -1,8 +1,8 @@
 [phases.install]
-cmds = ["npm ci"]
+cmds = ["npm ci --ignore-scripts"]
 
 [phases.build]
-cmds = ["npx prisma generate --no-engine"]
+cmds = ["npx prisma generate"]
 
 [start]
-cmd = "npm start"
+cmd = "node server.js"
