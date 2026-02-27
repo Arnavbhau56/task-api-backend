@@ -8,7 +8,7 @@
     "dev": "nodemon server.js",
     "test": "jest --coverage",
     "seed": "node prisma/seed.js",
-    "postinstall": "prisma generate"
+    "postinstall": "npx prisma generate"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
