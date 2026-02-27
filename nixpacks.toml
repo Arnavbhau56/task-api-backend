@@ -2,7 +2,7 @@
 cmds = ["npm ci"]
 
 [phases.build]
-cmds = ["npx prisma generate"]
+cmds = ["npx prisma generate --no-engine"]
 
 [start]
 cmd = "npm start"
