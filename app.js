@@ -20,7 +20,8 @@ app.use(morgan('combined', {
 app.use(helmet());
 app.use(cors({ 
   origin: [
-    process.env.CORS_ORIGIN || 'http://localhost:3000',
+    'http://localhost:3000',
+    'https://task-api-frontend-hn4rsp19l-arnavbhau56s-projects.vercel.app',
     'https://task-api-frontend-ruby.vercel.app'
   ], 
   credentials: true 
